@@ -17,7 +17,7 @@ title = "Ceresia Vision"
 [params.author]
   name = "ceresia.vision"
   email = "youremail@example.com"
-  image = "img/logo-blanco.png"
+  image = "img/logo.png"
   imageQuality = 96
   headline = "Analiza tu producto con otros ojos"
   bio = "A little bit about you"
