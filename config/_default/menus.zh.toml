@@ -1,0 +1,45 @@
+# -- Main Menu --
+
+[[main]]
+  name = "如何运作?"
+  pageRef = "como-funciona"
+  weight = 5
+
+[[main]]
+  name = "Ceresia 指数"
+  pageRef = "indices-ceresia"
+  weight = 6
+
+[[main]]
+  name = "关于我们"
+  pageRef = "quienes-somos"
+  weight = 20
+
+[[main]]
+  name = "应用"
+  weight = 10
+
+[[main]]
+  name = "Ceres 葡萄"
+  parent = "应用"
+  pageRef = "aplicaciones/ceres-uva"
+  weight = 20
+
+[[main]]
+  name = "Ceres 番茄"
+  parent = "应用"
+  pageRef = "aplicaciones/ceres-tomate"
+  weight = 20
+
+[[main]]
+  name = "Ceres 橄榄"
+  parent = "应用"
+  pageRef = "aplicaciones/ceres-oliva"
+  weight = 20
+
+[[main]]
+  name = "联系"
+  pageRef = "contacto"
+  weight = 30
+
+# -- Footer Menu --
