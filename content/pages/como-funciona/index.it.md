@@ -2,7 +2,7 @@
 title: Come funziona Ceres
 description: Scopri come il nostro sistema modulare de IA analizza con precisione lo stato dei tuoi frutti, ottimizzando la qualità fin dalla ricezione.
 summary: "Ceres utilizza intelligenza artificiale e visione artificiale per classificare lo stato sanitario e di maturazione dell'uva, dell'oliva e di altri frutti, in modo oggettivo e automatizzato."
-url: "/come-funziona-ceres"
+url: "/it/come-funziona-ceres"
 ---
 
 Ceres è il nostro sistema di analisi mediante visione artificiale che apporta obiettività e precisione alla classificazione dei tuoi frutti.

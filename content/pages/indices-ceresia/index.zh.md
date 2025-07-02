@@ -2,7 +2,7 @@
 title: Ceresia 指数
 description: 利用计算机视觉分析水果的 Ceresia 指数技术说明
 summary: "在实验室分析卫生状况"
-url: "/indices-ceresia"
+url: "/zh/indices-ceresia"
 ---
 {{< katex >}}
 

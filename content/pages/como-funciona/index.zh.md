@@ -2,7 +2,7 @@
 title: Ceres 如何运作
 description: 了解我们的模块化 AI 系统如何精准分析水果状态，从接收环节开始优化质量。
 summary: "Ceres 借助人工智能和计算机视觉，客观自动地判断葡萄、橄榄等水果的健康和成熟程度。"
-url: "/como-funciona-ceres"
+url: "/zh/como-funciona-ceres"
 ---
 
 Ceres 是我们基于视觉的分析系统，为您的水果分级带来客观性和精准度。
