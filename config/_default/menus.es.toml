@@ -22,7 +22,7 @@
   weight = 6
 
 [[main]]
-  name = "Quieres Somos"
+  name = "Quiénes Somos"
   pageRef = "quienes-somos"
   weight = 20
 

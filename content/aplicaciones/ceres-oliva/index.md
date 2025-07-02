@@ -1,9 +1,8 @@
 ---
 title: Ceres Oliva
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: Clasifica con Ceres tu recogida de aceituna
 summary: "Clasifica estado de maduracion de la oliva"
 ---
-
 
 ## De la Tolva al Análisis: La Verdadera Calidad de su Aceituna, al Instante.
 
