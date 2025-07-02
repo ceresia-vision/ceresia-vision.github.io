@@ -17,8 +17,13 @@
   weight = 5
 
 [[main]]
+  name = "Indices Ceresia"
+  pageRef = "indices-ceresia"
+  weight = 6
+
+[[main]]
   name = "Quieres Somos"
-  pageRef = "about"
+  pageRef = "quienes-somos"
   weight = 20
 
 [[main]]
@@ -44,11 +49,11 @@
   weight = 20
 
 
-[[main]]
-  name = "Fase Experimental"
-  parent = "Aplicaciones"
-  pageRef = "aplicaciones/prototipos"
-  weight = 20
+#[[main]]
+#  name = "Fase Experimental"
+#  parent = "Aplicaciones"
+#  pageRef = "aplicaciones/prototipos"
+#  weight = 20
 
 #[[subnavigation]]
 #  name = "An interesting topic"
