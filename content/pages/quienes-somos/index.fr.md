@@ -2,7 +2,7 @@
 title: Qui sommes-nous
 description: Présentation de l'équipe Ceresia
 summary: "Analyse de l'état de maturation de l'olive"
-url: "/qui-sommes-nous"
+url: "/fr/qui-sommes-nous"
 ---
 
 ## Sigfredo Garcia (CEO)

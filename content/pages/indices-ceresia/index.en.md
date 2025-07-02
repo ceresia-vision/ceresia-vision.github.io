@@ -2,7 +2,7 @@
 title: "Ceresia Indexes"
 description: "A technical explanation of the Ceresia Indexes for fruit analysis using computer vision."
 summary: "The technical methodology behind our AI-driven indexes for quantifying fruit health and harvest quality."
-url: "/ceresia-indexes"
+url: "/en/ceresia-indexes"
 ---
 {{< katex >}}
 

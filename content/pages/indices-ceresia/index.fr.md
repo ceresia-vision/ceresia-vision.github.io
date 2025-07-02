@@ -2,7 +2,7 @@
 title: Indices Ceresia
 description: Explication technique des indices Ceresia pour l'analyse des fruits avec la vision par ordinateur
 summary: "Analyse de l'état sanitaire en laboratoire"
-url: "/indices-ceresia"
+url: "/fr/indices-ceresia"
 ---
 {{< katex >}}
 

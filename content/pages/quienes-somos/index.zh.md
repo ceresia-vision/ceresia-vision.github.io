@@ -2,7 +2,7 @@
 title: "关于我们"
 description: fhiodsjfoisd fjdiosjfosdjfos
 summary: "分析橄榄成熟度"
-url: "/quienes-somos"
+url: "/zh/quienes-somos"
 ---
 
 ## Sigfredo Garcia（首席执行官）
