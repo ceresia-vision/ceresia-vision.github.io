@@ -1,6 +1,5 @@
 ---
 title: How Ceres Works
-date: 2025-07-03
 description: "Discover how our modular AI system accurately analyzes the condition of your fruit, optimizing quality from the moment of reception."
 summary: "Ceres uses artificial intelligence and computer vision to classify the health and ripeness of grapes, olives, and other fruits, in an objective and automated way."
 url: "/how-ceres-works"
