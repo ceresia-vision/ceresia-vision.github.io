@@ -1,0 +1,41 @@
+[[main]]
+  name = "Come funziona?"
+  pageRef = "como-funciona"
+  weight = 5
+
+[[main]]
+  name = "Indici Ceresia"
+  pageRef = "indices-ceresia"
+  weight = 6
+
+[[main]]
+  name = "Chi siamo"
+  pageRef = "quienes-somos"
+  weight = 20
+
+[[main]]
+  name = "Applicazioni"
+  weight = 10
+
+[[main]]
+  name = "Ceres Uva"
+  parent = "Applicazioni"
+  pageRef = "aplicaciones/ceres-uva"
+  weight = 20
+
+[[main]]
+  name = "Ceres Pomodoro"
+  parent = "Applicazioni"
+  pageRef = "aplicaciones/ceres-tomate"
+  weight = 20
+
+[[main]]
+  name = "Ceres Oliva"
+  parent = "Applicazioni"
+  pageRef = "aplicaciones/ceres-oliva"
+  weight = 20
+
+[[main]]
+  name = "Contatto"
+  pageRef = "contacto"
+  weight = 30

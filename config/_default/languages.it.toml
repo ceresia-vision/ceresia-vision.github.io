@@ -1,0 +1,20 @@
+disabled = false
+languageCode = "it"
+languageName = "Italian"
+weight = 1
+title = "Ceresia Vision"
+
+[params]
+  displayName = "IT"
+  isoCode = "it"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Computer vision"
+
+[params.author]
+  name = "ceresia.vision"
+  email = "info@ceresia.vision"
+  image = "img/logo.png"
+  imageQuality = 96
+  headline = "Analizza il tuo prodotto con altri occhi"
+  bio = "Visione artificiale avanzata per l'agricoltura"
