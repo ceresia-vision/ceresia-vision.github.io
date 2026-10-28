@@ -43,6 +43,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: Checkout backend
+        uses: actions/checkout@v4
+        with:
+          repository: ceresia-vision/ceres-backend
+          ref: master
+          token: ${{ secrets.BACKEND_READ_TOKEN }}
+          path: backend-source
+          persist-credentials: false
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -56,6 +64,22 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Build API documentation
+        run: |
+          docker build -t ceres-backend-docs ./backend-source
+          npm install --global redoc-cli
+          mkdir -p public/api/v1 public/api/v2
+          for version in v1 v2; do
+            docker run --rm --user "$(id -u):$(id -g)" \
+              -v "$PWD/backend-source:/output" --entrypoint python \
+              ceres-backend-docs manage.py spectacular \
+              --urlconf grapevis.public_schema_urls \
+              --custom-settings grapevis.public_schema_urls.SPECTACULAR_SETTINGS \
+              --file "/output/schema_${version}.yaml" --lang en --api-version "$version"
+            redoc-cli build "backend-source/schema_${version}.yaml" \
+              -o "public/api/${version}/index.html" --title "Ceres Public API ${version}"
+          done
+          cp public/api/v2/index.html public/api/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
