@@ -1,6 +1,6 @@
 ---
 title: 联系 Ceresia
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: 联系 Ceresia Vision，了解用于质量控制的计算机视觉方案。
 summary: "分析橄榄成熟度"
 url: "/zh/contacto"
 ---

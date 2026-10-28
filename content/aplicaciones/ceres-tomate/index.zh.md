@@ -1,6 +1,6 @@
 ---
 title: Ceres 番茄
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: 在接收环节分析番茄成熟度、缺陷和杂质。
 summary: "在实验室分析卫生状况"
 ---
 

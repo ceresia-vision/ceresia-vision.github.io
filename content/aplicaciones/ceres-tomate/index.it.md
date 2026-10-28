@@ -1,6 +1,6 @@
 ---
 title: Ceres Pomodoro
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: Analisi della maturazione, dei difetti e dei corpi estranei nel pomodoro alla ricezione.
 summary: "Analizza lo stato sanitario in laboratorio"
 ---
 

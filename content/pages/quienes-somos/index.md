@@ -1,6 +1,6 @@
 ---
 title: Quiénes Somos
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: Conoce al equipo de Ceresia Vision.
 summary: "Clasifica estado de maduracion de la oliva"
 url: "/quienes-somos"
 ---

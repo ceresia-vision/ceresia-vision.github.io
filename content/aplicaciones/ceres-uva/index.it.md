@@ -1,6 +1,6 @@
 ---
 title: Ceres Uva
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: Analisi dello stato sanitario e dei corpi estranei nella vendemmia mediante visione artificiale.
 summary: "Analizza corpi estranei nella vendemmia"
 ---
 

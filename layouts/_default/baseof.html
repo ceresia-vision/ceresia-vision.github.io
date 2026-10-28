@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}Ceresia Vision</title>
+  {{ $ui := index .Site.Data.interface .Site.Language.Lang }}
+  <meta name="description" content="{{ if .IsHome }}{{ $ui.intro }}{{ else }}{{ .Description | default (.Summary | plainify | truncate 160) }}{{ end }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
+  {{ $css := resources.Get "css/custom.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ if .HasShortcode "katex" }}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false}]})"></script>
+  {{ end }}
+</head>
+<body>
+  <a class="skip-link" href="#main-content">{{ $ui.back }} →</a>
+  <header class="site-header"><div class="nav-shell">
+    <a class="wordmark" href="{{ .Site.Home.RelPermalink }}" aria-label="Ceresia Vision"><span class="brand-symbol" aria-hidden="true">c<span>·</span></span>ceresia<span class="wordmark-light">vision</span></a>
+    <nav class="desktop-nav" aria-label="{{ $ui.menu }}">
+      {{ range slice "/pages/como-funciona" "/aplicaciones" "/pages/indices-ceresia" "/pages/quienes-somos" }}{{ with $.Site.GetPage . }}<a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>{{ end }}{{ end }}
+    </nav>
+    <div class="nav-actions"><details class="language-picker"><summary aria-label="{{ $ui.language }}">{{ .Site.Params.displayName }} <span aria-hidden="true">⌄</span></summary><div class="popover">{{ range .AllTranslations }}<a href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}" hreflang="{{ .Language.Lang }}">{{ .Site.Params.displayName }}</a>{{ end }}</div></details>{{ with .Site.GetPage "/pages/contacto" }}<a class="button small primary" href="{{ .RelPermalink }}">{{ $ui.contact }} <span aria-hidden="true">↗</span></a>{{ end }}
+    <details class="mobile-menu"><summary aria-label="{{ $ui.menu }}">☰</summary><nav class="popover">{{ range slice "/pages/como-funciona" "/aplicaciones" "/pages/indices-ceresia" "/pages/quienes-somos" "/pages/contacto" }}{{ with $.Site.GetPage . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}</nav></details></div>
+  </div></header>
+  <main id="main-content">{{ block "main" . }}{{ end }}</main>
+  <footer class="site-footer shell"><div><a class="wordmark" href="{{ .Site.Home.RelPermalink }}">ceresia<span class="wordmark-light">vision</span></a><p>{{ $ui.footer }}</p></div><div class="footer-links">{{ range slice "/pages/como-funciona" "/pages/quienes-somos" "/pages/contacto" }}{{ with $.Site.GetPage . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}<a href="mailto:info@ceresia.vision">info@ceresia.vision ↗</a></div><span class="footer-note">© {{ now.Year }} Ceresia Vision</span></footer>
+  {{ $js := resources.Get "js/site.js" | minify | fingerprint }}<script src="{{ $js.RelPermalink }}" defer></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 title: "关于我们"
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: 了解 Ceresia Vision 团队。
 summary: "分析橄榄成熟度"
 url: "/zh/quienes-somos"
 ---

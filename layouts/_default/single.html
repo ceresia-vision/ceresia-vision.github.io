@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{ $ui := index .Site.Data.interface .Site.Language.Lang }}
+<article class="shell document-page">
+  <header class="document-header"><a class="breadcrumb" href="{{ .Site.Home.RelPermalink }}">{{ $ui.back }} <span>/</span> Ceresia Vision</a><h1>{{ .Title }}</h1>{{ if eq .Section "aplicaciones" }}<p class="document-lead">{{ .Description }}</p>{{ with .Resources.GetMatch "cover.png" }}<img class="document-cover" src="{{ .RelPermalink }}" alt="{{ $.Title }}">{{ end }}{{ end }}</header>
+  <div class="document-grid"><aside class="document-aside"><p class="eyebrow">{{ $ui.contents }}</p>{{ .TableOfContents }}</aside><div class="prose">{{ .Content }}</div></div>
+  <div class="document-bottom"><span>{{ $ui.footer }}</span>{{ with .Site.GetPage "/pages/contacto" }}<a class="text-link" href="{{ .RelPermalink }}">{{ $ui.contact }} ↗</a>{{ end }}</div>
+</article>
+{{ end }}

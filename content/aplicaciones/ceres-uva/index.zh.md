@@ -1,6 +1,6 @@
 ---
 title: Ceres 葡萄
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: 通过计算机视觉分析葡萄采收的健康状况和杂质。
 summary: "在采收阶段检测异物"
 ---
 

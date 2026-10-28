@@ -1,6 +1,6 @@
 ---
 title: Ceres Tomate
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: Maduración, defectos y cuerpos extraños en el tomate, desde la recepción.
 summary: "Analiza el estado sanitario en laboratorio"
 ---
 

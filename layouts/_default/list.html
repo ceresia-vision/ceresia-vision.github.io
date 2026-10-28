@@ -1,0 +1,4 @@
+{{ define "main" }}
+{{ $ui := index .Site.Data.interface .Site.Language.Lang }}
+<section class="shell document-page"><header class="document-header"><a class="breadcrumb" href="{{ .Site.Home.RelPermalink }}">{{ $ui.back }} / Ceresia Vision</a><h1>{{ .Title }}</h1></header><div class="prose">{{ .Content }}</div><div class="application-list">{{ range .Pages }}<a href="{{ .RelPermalink }}" class="application-row"><div><h2>{{ .Title }}</h2><p>{{ .Description }}</p></div><span aria-hidden="true">↗</span></a>{{ end }}</div></section>
+{{ end }}

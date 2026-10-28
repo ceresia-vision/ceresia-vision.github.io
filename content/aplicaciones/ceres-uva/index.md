@@ -1,6 +1,6 @@
 ---
 title: Ceres Uva
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: Estado sanitario y cuerpos extraños en la vendimia, analizados mediante visión artificial.
 summary: "Analiza cuerpos extraños en la vendimia"
 ---
 

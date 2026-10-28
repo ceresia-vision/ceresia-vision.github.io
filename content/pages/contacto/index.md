@@ -1,6 +1,6 @@
 ---
 title: Contacta con Ceresia
-description: fhiodsjfoisd fjdiosjfosdjfos
+description: Contacta con Ceresia Vision para incorporar visión artificial a tus procesos de control de calidad.
 summary: "Clasifica estado de maduracion de la oliva"
 url: "/contacto"
 ---
