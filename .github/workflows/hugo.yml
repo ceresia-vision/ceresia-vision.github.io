@@ -77,7 +77,15 @@ jobs:
               --custom-settings grapevis.public_schema_urls.SPECTACULAR_SETTINGS \
               --file "/output/schema_${version}.yaml" --lang en --api-version "$version"
             redoc-cli build "backend-source/schema_${version}.yaml" \
-              -o "public/api/${version}/index.html" --title "Ceres Public API ${version}"
+              -o "public/api/${version}/index.html" --title "Ceres Public API ${version}" \
+              --disableGoogleFont \
+              --options.theme.colors.primary.main='#2563eb' \
+              --options.theme.colors.text.primary='#1e293b' \
+              --options.theme.typography.fontFamily='ui-sans-serif, system-ui, sans-serif' \
+              --options.theme.typography.headings.fontFamily='ui-sans-serif, system-ui, sans-serif' \
+              --options.theme.sidebar.backgroundColor='#f8fafc' \
+              --options.theme.sidebar.textColor='#334155' \
+              --options.theme.rightPanel.backgroundColor='#1e293b'
           done
           cp public/api/v2/index.html public/api/index.html
       - name: Upload artifact
