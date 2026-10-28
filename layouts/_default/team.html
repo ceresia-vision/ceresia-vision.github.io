@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ $ui := index .Site.Data.interface .Site.Language.Lang }}
+<article class="shell team-page">
+  <header class="team-header">
+    <a class="breadcrumb" href="{{ .Site.Home.RelPermalink }}">{{ $ui.back }} <span>/</span> Ceresia Vision</a>
+    <p class="eyebrow">CERESIA VISION / {{ .Params.team_label }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="team-intro">{{ .Params.intro }}</p>
+  </header>
+  <section aria-label="{{ .Params.team_label }}" class="team-section">
+    <div class="team-section-head"><h2>{{ .Params.team_label }}</h2><span aria-hidden="true">01 — 04</span></div>
+    <div class="team-grid">
+      {{ range .Params.team }}
+      {{ $member := . }}
+      <article class="team-member">
+        {{ with .photo }}{{ with $.Resources.GetMatch . }}<div class="team-photo"><img src="{{ .RelPermalink }}" alt="{{ $member.name }}" loading="lazy" width="640" height="640"></div>{{ end }}{{ else }}<div class="team-photo team-placeholder" aria-hidden="true"><span>{{ .initials }}</span></div>{{ end }}
+        <div class="team-member-info"><h3>{{ .name }}</h3><p class="team-role">{{ .role }}</p><p class="team-bio">{{ .bio }}</p></div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  <div class="document-bottom"><span>{{ $ui.footer }}</span>{{ with .Site.GetPage "/pages/contacto" }}<a class="text-link" href="{{ .RelPermalink }}">{{ $ui.contact }} ↗</a>{{ end }}</div>
+</article>
+{{ end }}
