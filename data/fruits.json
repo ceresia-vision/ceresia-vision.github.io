@@ -1,7 +1,42 @@
 {
-  "es": {"title": "Frutos", "all": "Ver todos los frutos", "ceres-uva": "Uva", "ceres-oliva": "Aceituna", "ceres-tomate": "Tomate"},
-  "en": {"title": "Fruit", "all": "View all fruit", "ceres-uva": "Grape", "ceres-oliva": "Olive", "ceres-tomate": "Tomato"},
-  "fr": {"title": "Fruits", "all": "Voir tous les fruits", "ceres-uva": "Raisin", "ceres-oliva": "Olive", "ceres-tomate": "Tomate"},
-  "it": {"title": "Frutti", "all": "Tutti i frutti", "ceres-uva": "Uva", "ceres-oliva": "Oliva", "ceres-tomate": "Pomodoro"},
-  "zh": {"title": "果实", "all": "查看所有果实", "ceres-uva": "葡萄", "ceres-oliva": "橄榄", "ceres-tomate": "番茄"}
+  "es": {
+    "title": "Frutos",
+    "all": "Ver todos los frutos",
+    "ceres-uva": "Uva",
+    "ceres-oliva": "Aceituna",
+    "ceres-tomate": "Tomate",
+    "ceres-pistacho": "Pistacho"
+  },
+  "en": {
+    "title": "Fruit",
+    "all": "View all fruit",
+    "ceres-uva": "Grape",
+    "ceres-oliva": "Olive",
+    "ceres-tomate": "Tomato",
+    "ceres-pistacho": "Pistachio"
+  },
+  "fr": {
+    "title": "Fruits",
+    "all": "Voir tous les fruits",
+    "ceres-uva": "Raisin",
+    "ceres-oliva": "Olive",
+    "ceres-tomate": "Tomate",
+    "ceres-pistacho": "Pistache"
+  },
+  "it": {
+    "title": "Frutti",
+    "all": "Tutti i frutti",
+    "ceres-uva": "Uva",
+    "ceres-oliva": "Oliva",
+    "ceres-tomate": "Pomodoro",
+    "ceres-pistacho": "Pistacchio"
+  },
+  "zh": {
+    "title": "果实",
+    "all": "查看所有果实",
+    "ceres-uva": "葡萄",
+    "ceres-oliva": "橄榄",
+    "ceres-tomate": "番茄",
+    "ceres-pistacho": "开心果"
+  }
 }

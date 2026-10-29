@@ -47,3 +47,15 @@ document.querySelectorAll('[data-carousel]').forEach((carousel) => {
   carousel.querySelector('[data-carousel-prev]').addEventListener('click', () => show(current - 1));
   carousel.querySelector('[data-carousel-next]').addEventListener('click', () => show(current + 1));
 });
+
+// Let visitors stop the continuously moving client ribbon.
+document.querySelectorAll('[data-clients]').forEach((section) => {
+  const button = section.querySelector('[data-clients-toggle]');
+  button.hidden = false;
+  button.addEventListener('click', () => {
+    const paused = section.dataset.paused !== 'true';
+    section.dataset.paused = String(paused);
+    button.setAttribute('aria-label', paused ? button.dataset.play : button.dataset.pause);
+    button.querySelector('span').textContent = paused ? '▶' : 'Ⅱ';
+  });
+});
