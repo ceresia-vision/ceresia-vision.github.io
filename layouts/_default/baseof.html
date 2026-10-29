@@ -20,7 +20,7 @@
 <body>
   <a class="skip-link" href="#main-content">{{ $ui.back }} →</a>
   <header class="site-header"><div class="nav-shell">
-    <a class="wordmark" href="{{ .Site.Home.RelPermalink }}" aria-label="Ceresia Vision"><span class="brand-symbol" aria-hidden="true">c<span>·</span></span>ceresia<span class="wordmark-light">vision</span></a>
+    <a class="wordmark" href="{{ .Site.Home.RelPermalink }}" aria-label="Ceresia Vision"><img class="brand-symbol" src="{{ "img/ceresia-simbolo.png" | relURL }}" alt="" width="32" height="32">ceresia<span class="wordmark-light">vision</span></a>
     <nav class="desktop-nav" aria-label="{{ $ui.menu }}">
       {{ with .Site.GetPage "/pages/como-funciona" }}<a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>{{ end }}
       <details class="fruit-menu"><summary>{{ $fruits.title }} <span aria-hidden="true">⌄</span></summary><div class="popover fruit-popover">{{ range slice "ceres-uva" "ceres-oliva" "ceres-tomate" "ceres-pistacho" }}{{ $slug := . }}{{ with $.Site.GetPage (printf "/aplicaciones/%s" .) }}<a href="{{ .RelPermalink }}">{{ index $fruits $slug }}</a>{{ end }}{{ end }}</div></details>
