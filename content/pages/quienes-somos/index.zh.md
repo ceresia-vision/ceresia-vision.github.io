@@ -19,9 +19,11 @@ team:
   - name: Pedro Valiente
     role: 首席科学家
     initials: PV
+    photo: pedro-valiente.webp
     bio: "作为首席科学家，为 Ceres 人工智能的研发带来科学研究视角。"
   - name: Antonio Montoya
     role: 计算机视觉专家
     initials: AM
+    photo: antonio-montoya.webp
     bio: "作为计算机视觉专家，致力于图像解读，帮助了解产品品质。"
 ---

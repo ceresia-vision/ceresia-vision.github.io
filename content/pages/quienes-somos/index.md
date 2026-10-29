@@ -19,9 +19,11 @@ team:
   - name: Pedro Valiente
     role: Lead Scientist
     initials: PV
+    photo: pedro-valiente.webp
     bio: "Como responsable científico, aporta la mirada investigadora al desarrollo de la inteligencia artificial de Ceres."
   - name: Antonio Montoya
     role: Computer Vision Expert
     initials: AM
+    photo: antonio-montoya.webp
     bio: "Especialista en visión artificial, trabaja en la interpretación de imágenes para ayudar a comprender la calidad del producto."
 ---

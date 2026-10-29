@@ -5,7 +5,7 @@
   <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}Ceresia Vision</title>
   {{ $ui := index .Site.Data.interface .Site.Language.Lang }}
   {{ $fruits := index .Site.Data.fruits .Site.Language.Lang }}
-  <meta name="description" content="{{ if .IsHome }}{{ $ui.intro }}{{ else }}{{ .Description | default (.Summary | plainify | truncate 160) }}{{ end }}">
+  <meta name="description" content="{{ if .IsHome }}{{ $ui.intro }}{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
   {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
   {{ $css := resources.Get "css/custom.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">

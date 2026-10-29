@@ -33,3 +33,17 @@ document.addEventListener('keydown', (event) => {
     if (menu) { menu.open = false; menu.querySelector('summary').focus(); }
   }
 });
+
+// Manual carousel: no motion or timer until the visitor chooses a slide.
+document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+  const slides = Array.from(carousel.querySelectorAll('[data-slide]'));
+  const count = carousel.querySelector('[data-carousel-count]');
+  let current = 0;
+  const show = (index) => {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => { slide.hidden = i !== current; });
+    count.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+  };
+  carousel.querySelector('[data-carousel-prev]').addEventListener('click', () => show(current - 1));
+  carousel.querySelector('[data-carousel-next]').addEventListener('click', () => show(current + 1));
+});

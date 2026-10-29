@@ -1,0 +1,12 @@
+{{ $labels := index (dict
+  "es" (slice "Cintas transportadoras con cámaras instaladas" "Cámara e iluminación sobre una cinta transportadora")
+  "en" (slice "Conveyor belts with installed cameras" "Camera and lighting above a conveyor belt")
+  "fr" (slice "Convoyeurs équipés de caméras" "Caméra et éclairage au-dessus d’un convoyeur")
+  "it" (slice "Nastri trasportatori con telecamere installate" "Telecamera e illuminazione sopra un nastro trasportatore")
+  "zh" (slice "安装摄像头的输送带" "输送带上方的摄像头和照明设备")
+) .Page.Site.Language.Lang }}
+<div class="conveyor-photos">
+  {{ range $i, $name := slice "cintas-instalacion.webp" "camara-cinta.webp" }}
+    {{ with $.Page.Resources.GetMatch $name }}<img src="{{ .RelPermalink }}" alt="{{ index $labels $i }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">{{ end }}
+  {{ end }}
+</div>

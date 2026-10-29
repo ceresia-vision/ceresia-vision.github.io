@@ -1,0 +1,17 @@
+{{ $labels := index (dict
+  "es" (dict "label" "Ejemplos visuales de análisis" "previous" "Imagen anterior" "next" "Imagen siguiente" "tomate" "Ilustración de análisis de tomates" "pistacho" "Ilustración de análisis de pistachos" "aceituna" "Ilustración de análisis de aceitunas")
+  "en" (dict "label" "Visual analysis examples" "previous" "Previous image" "next" "Next image" "tomate" "Illustration of tomato analysis" "pistacho" "Illustration of pistachio analysis" "aceituna" "Illustration of olive analysis")
+  "fr" (dict "label" "Exemples visuels d’analyse" "previous" "Image précédente" "next" "Image suivante" "tomate" "Illustration d’analyse de tomates" "pistacho" "Illustration d’analyse de pistaches" "aceituna" "Illustration d’analyse d’olives")
+  "it" (dict "label" "Esempi visivi di analisi" "previous" "Immagine precedente" "next" "Immagine successiva" "tomate" "Illustrazione dell’analisi di pomodori" "pistacho" "Illustrazione dell’analisi di pistacchi" "aceituna" "Illustrazione dell’analisi di olive")
+  "zh" (dict "label" "分析视觉示例" "previous" "上一张图片" "next" "下一张图片" "tomate" "番茄分析示意图" "pistacho" "开心果分析示意图" "aceituna" "橄榄分析示意图")
+) .Page.Site.Language.Lang }}
+<div class="vision-carousel" role="region" aria-label="{{ $labels.label }}" data-carousel>
+  <div class="vision-carousel-frame" aria-live="polite">
+    {{ range $i, $fruit := slice "tomate" "pistacho" "aceituna" }}
+    <div class="vision-carousel-slide" data-slide {{ if ne $i 0 }}hidden{{ end }}>
+      <img src="{{ printf "img/ejemplos-vision/%s.webp" $fruit | relURL }}" alt="{{ index $labels $fruit }}" width="1045" height="1400" loading="lazy">
+    </div>
+    {{ end }}
+  </div>
+  <div class="carousel-controls"><button type="button" data-carousel-prev aria-label="{{ $labels.previous }}">←</button><span class="carousel-count" data-carousel-count>01 / 03</span><button type="button" data-carousel-next aria-label="{{ $labels.next }}">→</button></div>
+</div>

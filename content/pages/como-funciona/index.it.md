@@ -1,32 +1,34 @@
 ---
 title: Come funziona Ceres
-description: Scopri come il nostro sistema modulare de IA analizza con precisione lo stato dei tuoi frutti, ottimizzando la qualità fin dalla ricezione.
-summary: "Ceres utilizza intelligenza artificiale e visione artificiale per classificare lo stato sanitario e di maturazione dell'uva, dell'oliva e di altri frutti, in modo oggettivo e automatizzato."
+description: Visione artificiale per automatizzare la classificazione visiva e supportare le decisioni sulla qualità.
+summary: "Visione artificiale per automatizzare la classificazione visiva e supportare le decisioni sulla qualità."
 url: "/it/come-funziona-ceres"
 ---
 
-Ceres è il nostro sistema di analisi mediante visione artificiale che apporta obiettività e precisione alla classificazione dei tuoi frutti.
+Ceres sostituisce la classificazione visiva manuale con un’analisi delle immagini coerente e oggettiva. Grazie alla visione artificiale, identifica le zone dell’immagine e aiuta a valutare la qualità del prodotto per decidere alla ricezione e nella separazione dei lotti.
 
-Attraverso telecamere ad alta risoluzione, cattura immagini nelle tue tramogge o nastri di selezione e le analizza all'istante con **Intelligenza Artificiale**. Il nostro modello, addestrato in modo approfondito, classifica ogni frutto per determinarne lo stato sanitario e di maturazione. In pochi secondi ottieni un rapporto dettagliato per prendere decisioni basate sui dati.
+## Dall’immagine alla decisione
 
-Il sistema è **completamente modulare**: inizia con l'essenziale e amplia secondo le tue necessità.
+1. **Acquisizione.** Le telecamere riprendono il prodotto nel punto di analisi.
+2. **Analisi.** Ceres segmenta l’immagine in zone e valuta caratteristiche visibili come stato sanitario, difetti o materiale indesiderato, in base al prodotto e all’applicazione.
+3. **Risultati.** Il team consulta gli indicatori per valutare il campione e orientare le decisioni.
 
-# Base Centrale di Elaborazione
+Ceres è disponibile per **uva, olive, pomodori e pistacchi**. Le caratteristiche analizzate dipendono dal prodotto e dalla configurazione.
 
-È il cuore di Ceres. Si tratta di un potente computer industriale che esegue i nostri algoritmi di Intelligenza Artificiale alla massima velocità per garantire risultati rapidi e affidabili.
 
-Dal suo intuitivo schermo di controllo, i tuoi operatori possono gestire l'intero sistema, avviare analisi e consultare rapporti dettagliati senza complicazioni. È il centro di comando unificato per il controllo di qualità.
+{{< vision-carousel >}}
 
-# Telecamere Standard
+## Un sistema, diverse configurazioni
 
-Le nostre **Telecamere Standard** sono la soluzione ideale per punti di analisi fissi, come la tramoggia di ricezione principale.
+La soluzione di base combina una **stazione centrale e una telecamera fissa** per analizzare i campioni in un punto di controllo. Può essere ampliata con altre telecamere secondo le esigenze dell’impianto:
 
-Si installano in un luogo strategico e si operano direttamente dallo schermo della Base Centrale. Con un semplice clic, l'operatore cattura l'immagine e ottiene l'analisi di qualità all'istante. Sono telecamere robuste, progettate per l'ambiente industriale e ottimizzate per garantire la massima precisione.
+- **Telecamere sulle tramogge**, gestite tramite tablet dall’area di lavoro.
+- **Telecamere per nastri continui**, che analizzano il prodotto durante il passaggio sul nastro.
 
-![alt text](camara1.jpg)
+{{< conveyor-photos >}}
 
-# Telecamere Interattive
+## Risultati connessi
 
-Le **Telecamere Interattive** offrono la massima flessibilità alla tua operazione. Progettate per punti di analisi multipli o lontani dall'ufficio, permettono agli operatori di controllare il sistema da un tablet o da un telefono.
+Consulta lo storico, esporta i risultati o integra Ceres con altri sistemi tramite l’[API](/api/).
 
-Direttamente dall'area di lavoro, un operatore può visualizzare la telecamera, catturare l'immagine e ricevere l'analisi sul proprio dispositivo. Questa autonomia agilizza il lavoro e consente di effettuare controlli di qualità in qualsiasi punto delle tue installazioni con totale efficienza.
+Vuoi conoscere la configurazione adatta al tuo impianto? [Parliamone](/it/contatto/).
