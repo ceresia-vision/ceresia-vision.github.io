@@ -35,6 +35,7 @@
       </div>
       <div class="carousel-controls"><button type="button" data-carousel-prev aria-label="{{ $carouselLabels.previous }}">←</button><span class="carousel-count" data-carousel-count>01 / 04</span><button type="button" data-carousel-next aria-label="{{ $carouselLabels.next }}">→</button></div>
     </div></div></div></section>
+{{ if .Site.Params.showClientLogos }}
 {{ $clientsLabels := index (dict
   "es" (dict "title" "Confían en Ceres" "pause" "Pausar movimiento" "play" "Reanudar movimiento")
   "en" (dict "title" "Trusted by" "pause" "Pause movement" "play" "Resume movement")
@@ -46,8 +47,9 @@
   <div class="clients-heading"><button class="clients-toggle" type="button" data-clients-toggle data-pause="{{ $clientsLabels.pause }}" data-play="{{ $clientsLabels.play }}" aria-label="{{ $clientsLabels.pause }}" hidden><span aria-hidden="true">Ⅱ</span></button></div>
   <div class="clients-viewport"><div class="clients-track">
     {{ range $copy := seq 4 }}<ul class="clients-row"{{ if ne $copy 1 }} aria-hidden="true"{{ end }}>
-      {{ range $.Site.Data.clientes }}<li><img src="{{ printf "img/clientes/%s" .file | relURL }}" alt="{{ if eq $copy 1 }}{{ .name }}{{ end }}" loading="lazy" width="150" height="80"></li>{{ end }}
+      {{ range $.Site.Data.clientes }}{{ $client := . }}{{ with resources.Get (printf "img/clientes/%s" .file) }}<li><img src="{{ .RelPermalink }}" alt="{{ if eq $copy 1 }}{{ $client.name }}{{ end }}" loading="lazy" width="150" height="80"></li>{{ end }}{{ end }}
     </ul>{{ end }}
   </div></div>
 </section>
+{{ end }}
 <section class="contact-cta shell"><p class="eyebrow">CERESIA VISION</p><h2>{{ $contact.Title }}</h2><a class="button primary" href="mailto:info@ceresia.vision">info@ceresia.vision <span aria-hidden="true">↗</span></a></section>

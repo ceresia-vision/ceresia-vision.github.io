@@ -8,6 +8,8 @@
 colorScheme = "blowfish"
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = false
+# Keep client references hidden until their use is authorised.
+showClientLogos = false
 
 enableSearch = true
 enableCodeCopy = false
