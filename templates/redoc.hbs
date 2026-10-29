@@ -6,6 +6,8 @@
   <title>{{title}} · Ceresia Vision</title>
   {{{redocHead}}}
   <link rel="stylesheet" href="{{templateOptions.siteUrl}}css/api-docs.css?v=6">
+  <link rel="stylesheet" href="{{templateOptions.siteUrl}}css/analytics-consent.css">
+  <script defer src="{{templateOptions.siteUrl}}js/analytics-consent.js" data-site-base="{{templateOptions.siteUrl}}"></script>
 </head>
 <body>
   <a class="api-skip" href="#api-main">Skip to API documentation</a>
@@ -29,6 +31,7 @@
     <div class="api-context"><span>CERESIA VISION / API</span><nav aria-label="API version"><a href="{{templateOptions.siteUrl}}api/v1/">v1</a><a href="{{templateOptions.siteUrl}}api/v2/">v2</a></nav></div>
     {{{redocHTML}}}
   </main>
+  <div class="api-cookie-settings"><button type="button" data-cookie-settings>Cookies</button></div>
   <script>
     document.addEventListener('click', function (event) {
       document.querySelectorAll('.api-header details[open]').forEach(function (menu) { if (!menu.contains(event.target)) menu.open = false; });

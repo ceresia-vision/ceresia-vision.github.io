@@ -8,6 +8,8 @@
   <meta name="description" content="{{ if .IsHome }}{{ $ui.intro }}{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
   {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
+  <link rel="stylesheet" href="{{ "css/analytics-consent.css" | relURL }}">
+  <script defer src="{{ "js/analytics-consent.js" | relURL }}" data-site-base="{{ "" | relURL }}"></script>
   {{ $css := resources.Get "css/custom.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ if .HasShortcode "katex" }}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
@@ -29,7 +31,7 @@
     <details class="mobile-menu"><summary aria-label="{{ $ui.menu }}">☰</summary><nav class="popover">{{ with .Site.GetPage "/pages/como-funciona" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}<details class="mobile-fruits"><summary>{{ $fruits.title }} <span aria-hidden="true">⌄</span></summary><div>{{ range slice "ceres-uva" "ceres-oliva" "ceres-tomate" }}{{ $slug := . }}{{ with $.Site.GetPage (printf "/aplicaciones/%s" .) }}<a href="{{ .RelPermalink }}">{{ index $fruits $slug }}</a>{{ end }}{{ end }}</div></details>{{ range slice "/pages/quienes-somos" "/pages/contacto" }}{{ with $.Site.GetPage . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}<a href="{{ "api/" | relURL }}">API</a></nav></details></div>
   </div></header>
   <main id="main-content">{{ block "main" . }}{{ end }}</main>
-  <footer class="site-footer shell"><div><a class="wordmark" href="{{ .Site.Home.RelPermalink }}">ceresia<span class="wordmark-light">vision</span></a><p>{{ $ui.footer }}</p></div><div class="footer-links">{{ range slice "/pages/como-funciona" "/pages/quienes-somos" "/pages/contacto" }}{{ with $.Site.GetPage . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}<a href="mailto:info@ceresia.vision">info@ceresia.vision ↗</a></div><span class="footer-note">© {{ now.Year }} Ceresia Vision</span></footer>
+  <footer class="site-footer shell"><div><a class="wordmark" href="{{ .Site.Home.RelPermalink }}">ceresia<span class="wordmark-light">vision</span></a><p>{{ $ui.footer }}</p></div><div class="footer-links">{{ range slice "/pages/como-funciona" "/pages/quienes-somos" "/pages/contacto" }}{{ with $.Site.GetPage . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}<a href="mailto:info@ceresia.vision">info@ceresia.vision ↗</a><button type="button" data-cookie-settings>Cookies</button></div><span class="footer-note">© {{ now.Year }} Ceresia Vision</span></footer>
   {{ $js := resources.Get "js/site.js" | minify | fingerprint }}<script src="{{ $js.RelPermalink }}" defer></script>
 </body>
 </html>
