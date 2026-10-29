@@ -22,10 +22,14 @@ document.querySelectorAll('[role="tablist"]').forEach((list) => {
   });
 });
 document.addEventListener('click', (event) => {
-  document.querySelectorAll('.nav-actions details[open]').forEach((menu) => {
+  document.querySelectorAll('.nav-actions details[open], .fruit-menu[open]').forEach((menu) => {
     if (!menu.contains(event.target)) menu.open = false;
   });
 });
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') document.querySelectorAll('.nav-actions details[open]').forEach((menu) => { menu.open = false; menu.querySelector('summary').focus(); });
+  if (event.key === 'Escape') {
+    const focusedMenu = event.target.closest('details[open]');
+    const menu = focusedMenu || document.querySelector('.fruit-menu[open], .nav-actions details[open]');
+    if (menu) { menu.open = false; menu.querySelector('summary').focus(); }
+  }
 });

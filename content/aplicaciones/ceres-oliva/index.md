@@ -4,7 +4,7 @@ description: Clasifica con Ceres tu recogida de aceituna
 summary: "Clasifica estado de maduracion de la oliva"
 ---
 
-## De la Tolva al Análisis: La Verdadera Calidad de su Aceituna, al Instante.
+## De la tolva al análisis de la aceituna
 
 Cada remolque que llega a su patio de recepción es una promesa y un desafío. En esa mezcla de aceitunas reside el potencial de su futuro Aceite de Oliva Virgen Extra. Hasta ahora, valorar esa calidad con total objetividad era una tarea compleja y sujeta a la experiencia.
 

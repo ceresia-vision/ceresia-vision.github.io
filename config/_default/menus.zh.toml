@@ -5,10 +5,6 @@
   pageRef = "como-funciona"
   weight = 5
 
-[[main]]
-  name = "Ceresia 指数"
-  pageRef = "indices-ceresia"
-  weight = 6
 
 [[main]]
   name = "关于我们"

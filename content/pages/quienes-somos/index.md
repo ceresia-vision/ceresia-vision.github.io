@@ -1,5 +1,5 @@
 ---
-title: Quiénes Somos
+title: Quiénes somos
 description: Conoce al equipo de Ceresia Vision.
 summary: "Las personas detrás de Ceresia Vision."
 url: "/quienes-somos"

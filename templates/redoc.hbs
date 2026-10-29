@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}} · Ceresia Vision</title>
+  {{{redocHead}}}
+  <link rel="stylesheet" href="{{templateOptions.siteUrl}}css/api-docs.css?v=2">
+</head>
+<body>
+  <a class="api-skip" href="#api-main">Skip to API documentation</a>
+  <header class="api-header">
+    <div class="api-nav-shell">
+      <a class="api-wordmark" href="{{templateOptions.siteUrl}}" aria-label="Ceresia Vision"><span class="api-brand-symbol" aria-hidden="true">c<span>·</span></span>ceresia<span class="api-wordmark-light">vision</span></a>
+      <nav class="api-primary-nav" aria-label="Main navigation">
+        <a href="{{templateOptions.siteUrl}}como-funciona-ceres/">Cómo funciona Ceres</a>
+        <details class="api-fruit-menu"><summary>Frutos <span aria-hidden="true">⌄</span></summary><div class="api-dropdown"><a href="{{templateOptions.siteUrl}}aplicaciones/ceres-uva/">Uva</a><a href="{{templateOptions.siteUrl}}aplicaciones/ceres-oliva/">Aceituna</a><a href="{{templateOptions.siteUrl}}aplicaciones/ceres-tomate/">Tomate</a></div></details>
+        <a href="{{templateOptions.siteUrl}}quienes-somos/">Quiénes somos</a>
+        <a href="{{templateOptions.siteUrl}}api/" aria-current="page">API</a>
+      </nav>
+      <a class="api-contact" href="{{templateOptions.siteUrl}}contacto/">Hablemos <span aria-hidden="true">↗</span></a>
+      <details class="api-mobile-menu"><summary aria-label="Menú">☰</summary><nav class="api-dropdown" aria-label="Navegación"><a href="{{templateOptions.siteUrl}}como-funciona-ceres/">Cómo funciona Ceres</a><a href="{{templateOptions.siteUrl}}aplicaciones/ceres-uva/">Uva</a><a href="{{templateOptions.siteUrl}}aplicaciones/ceres-oliva/">Aceituna</a><a href="{{templateOptions.siteUrl}}aplicaciones/ceres-tomate/">Tomate</a><a href="{{templateOptions.siteUrl}}quienes-somos/">Quiénes somos</a><a href="{{templateOptions.siteUrl}}api/">API</a><a href="{{templateOptions.siteUrl}}contacto/">Contacto</a></nav></details>
+    </div>
+  </header>
+  <main id="api-main" class="api-shell">
+    <div class="api-context"><span>CERESIA VISION / API</span><nav aria-label="API version"><a href="{{templateOptions.siteUrl}}api/v1/">v1</a><a href="{{templateOptions.siteUrl}}api/v2/">v2</a></nav></div>
+    {{{redocHTML}}}
+  </main>
+  <script>
+    document.addEventListener('click', function (event) {
+      document.querySelectorAll('.api-header details[open]').forEach(function (menu) { if (!menu.contains(event.target)) menu.open = false; });
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') { var menu = event.target.closest('.api-header details[open]'); if (menu) { menu.open = false; menu.querySelector('summary').focus(); } }
+    });
+  </script>
+</body>
+</html>

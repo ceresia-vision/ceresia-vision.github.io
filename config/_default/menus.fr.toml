@@ -3,10 +3,6 @@
   pageRef = "como-funciona"
   weight = 5
 
-[[main]]
-  name = "Indices Ceresia"
-  pageRef = "indices-ceresia"
-  weight = 6
 
 [[main]]
   name = "Qui sommes-nous"

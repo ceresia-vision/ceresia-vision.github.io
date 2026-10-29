@@ -67,7 +67,7 @@ jobs:
       - name: Build API documentation
         run: |
           docker build -t ceres-backend-docs ./backend-source
-          npm install --global redoc-cli
+          npm install --global redoc-cli@0.13.21
           mkdir -p public/api/v1 public/api/v2
           for version in v1 v2; do
             docker run --rm --user "$(id -u):$(id -g)" \
@@ -78,14 +78,17 @@ jobs:
               --file "/output/schema_${version}.yaml" --lang en --api-version "$version"
             redoc-cli build "backend-source/schema_${version}.yaml" \
               -o "public/api/${version}/index.html" --title "Ceres Public API ${version}" \
+              --template templates/redoc.hbs \
+              --templateOptions.siteUrl "${{ steps.pages.outputs.base_url }}/" \
               --disableGoogleFont \
-              --options.theme.colors.primary.main='#2563eb' \
-              --options.theme.colors.text.primary='#1e293b' \
-              --options.theme.typography.fontFamily='ui-sans-serif, system-ui, sans-serif' \
-              --options.theme.typography.headings.fontFamily='ui-sans-serif, system-ui, sans-serif' \
-              --options.theme.sidebar.backgroundColor='#f8fafc' \
-              --options.theme.sidebar.textColor='#334155' \
-              --options.theme.rightPanel.backgroundColor='#1e293b'
+              --options.theme.colors.primary.main='#5e5ce6' \
+              --options.theme.colors.text.primary='#202124' \
+              --options.theme.typography.fontFamily='Inter, Helvetica Neue, Arial, sans-serif' \
+              --options.theme.typography.headings.fontFamily='Inter, Helvetica Neue, Arial, sans-serif' \
+              --options.theme.sidebar.backgroundColor='#ffffff' \
+              --options.theme.sidebar.textColor='#62656d' \
+              --options.theme.rightPanel.backgroundColor='#ffffff' \
+              --options.theme.rightPanel.textColor='#202124'
           done
           cp public/api/v2/index.html public/api/index.html
       - name: Upload artifact

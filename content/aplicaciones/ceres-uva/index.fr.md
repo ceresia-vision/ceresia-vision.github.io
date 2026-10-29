@@ -10,7 +10,7 @@ La période des vendanges est cruciale. Chaque benne qui arrive dans votre cave 
 
 Nous présentons **Ceres**, le système de vision artificielle qui vous offre une radiographie complète de votre raisin en quelques secondes. Avec une simple photographie à la trémie ou sur la table de tri, notre Intelligence Artificielle analyse le lot et vous fournit des données objectives sur :
 
-* **Indice Sanitaire :** détection et quantification précises de la *botrytis*, du mildiou ou d'autres moisissures susceptibles de compromettre la qualité du moût.
+* **État sanitaire :** détection de la *botrytis*, du mildiou ou d'autres moisissures susceptibles de compromettre la qualité du moût.
 * **Corps Étrangers :** identification automatique des feuilles, rafles, insectes ou de tout élément indésirable pouvant apporter des saveurs anormales.
 * **Qualité de la Récolte :** évaluation de l'intégrité des baies pour éviter les oxydations prématurées et décider du type de processus.
 

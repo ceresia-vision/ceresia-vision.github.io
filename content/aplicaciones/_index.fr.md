@@ -1,5 +1,5 @@
 ---
-title: "Produits"
+title: "Fruits"
 
 draft: false
 

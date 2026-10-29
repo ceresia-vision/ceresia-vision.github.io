@@ -5,7 +5,7 @@ summary: "Analiza el estado sanitario en laboratorio"
 ---
 
 
-## Máxima Calidad para su Tomate, Definida en la Recepción.
+## La calidad del tomate empieza en la recepción
 
 La consistencia es la clave en la industria del tomate. La calidad de su producto final —ya sea para mercado en fresco, concentrado, o en conserva— depende directamente de la materia prima que entra en su planta. Evaluar de forma rápida y objetiva toneladas de tomate en la línea de recepción es el primer gran desafío.
 

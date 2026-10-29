@@ -10,7 +10,7 @@ The moment of harvest is critical. Every trailer that arrives at your winery hol
 
 Introducing **Ceres**, the computer vision system that provides a complete X-ray of your grapes in seconds. With a simple photograph at the hopper or sorting table, our Artificial Intelligence analyzes the batch and provides you with objective data on:
 
-* **Health Index:** Precise detection and quantification of *botrytis*, mildew, or other molds that could compromise the quality of the must.
+* **Health status:** Detection of *botrytis*, mildew, or other molds that could compromise the quality of the must.
 * **Foreign Materials:** Automatic identification of leaves, stem fragments, insects, or any unwanted element that could introduce off-flavors.
 * **Harvest Quality:** Evaluation of the berry's integrity to prevent premature oxidation and decide on the appropriate processing method.
 
