@@ -20,6 +20,7 @@
 @media(max-width:900px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:45px 24px}}
 @media(max-width:600px){.team-page{padding-block:35px 45px}.team-header .breadcrumb{margin-bottom:36px}.team-section{margin-top:70px}.team-grid{gap:36px 16px}.team-member h3{font-size:17px}.team-member-info{padding-top:16px}.team-bio{font-size:13px;margin-top:13px}.team-page .document-bottom{margin-top:65px}}
 @media(max-width:360px){.team-grid{grid-template-columns:1fr}}
+@media(max-width:360px){.nav-shell{gap:5px}.nav-actions{gap:5px}.wordmark{font-size:18px}}
 /* Align interior page labels with the API's context bar. */
 .document-page,.team-page{padding-top:24px}
 @media(max-width:780px){.document-page,.team-page{padding-top:20px}}
